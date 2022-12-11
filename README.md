@@ -1,2 +1,3 @@
-# adventofcode
-Advent of code challenges
+# Advent of Code
+
+Solving the puzzles in [Advent of Code](https://adventofcode.com/)
