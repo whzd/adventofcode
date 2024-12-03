@@ -16,7 +16,7 @@ All sequence that don't meet this standard are considered unsafe.
 3. Increment a variable for each safe sequence found.
 
 For this approach the time complexity is defined by looping through the main list and all the numbers of each of the lists inside.
-Therefore the time complexity is 0(n^2).
+Therefore the time complexity is O(n^2).
 
 ## Part 2
 
@@ -25,5 +25,8 @@ This means that it requires two infringements on a sequence in order to be consi
 
 ### Approach
 
-1. Take the previous algorithm and create a variable as fault tol
+1. Take the previous algorithm and, for the unsafe sequences, rerun the tests on a new array composed of all the numbers except one.
+
+For this approach the time complexity is defined by the looping of the new array on where a number was removed.
+On the presented solution, this new constrain made the time complexity increase to O(n^3)
 
