@@ -19,7 +19,8 @@ Challenge Page: [Link](https://adventofcode.com/2024/day/3)
 
 ### Approach
 
-1. Use regular expression to extract all the mul matching patterns and their starting index.
-2. Use regular expression to extract all the instructions and their starting index.
-3. Convert the numbers of the mul patterns that have index greater than the "do" instruction or lesser than the first "don't" instruction.
-4. Calculate the sum of all the converted numbers.
+1. Use regular expression to extract all the mul matching patterns and their index.
+2. Use regular expression to extract all the instructions and their index.
+3. Create a ordered map with all the patterns and their starting index.
+4. The "do" and "dont" instructions control a flag that will enable or disable operations on the mul matching patterns.
+5. Calculate the multiplications when the flag is true.
